@@ -1,0 +1,78 @@
+* {
+    box-sizing: ;
+}
+
+p {
+    margin: 0 0;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardWrapper {
+    position: relative;
+}
+
+.welcomeCard {
+    width: 18rem;
+    height: 30rem;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+    overflow:hidden;
+    box-shadow: 10px 10px 40px lightgray;
+    
+}
+
+.cardWrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -13%;
+    margin-left: -5px;
+    border-width: 25px;
+    border-style: solid;
+    border-color:  transparent lightgray transparent transparent;
+  }
+
+.pipelineLogo {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+
+}
+
+.pipelineLogo img {
+    width: 75%;
+}
+
+.content {
+    background-color: lightgray;
+    height: 100%;
+    padding: 1rem;
+}
+.titleBig {
+    text-align: center;
+    font-size: 4rem;
+    font-style: bold;
+}
+
+.titleSmaller {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.info {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    line-height: 1.75rem;
+
+}
